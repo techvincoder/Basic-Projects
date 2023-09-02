@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    /* background-color: antiquewhite; */
+    background-color: #e2e5e8;
+    background-image: linear-gradient(98deg, #e2e5e8 0%, #ffffff 100%);
+}
+
+/* navbar ka code sahi hai wo bar chhota ho ja rha hai that is an issue of media queries */
+
+/* menu items ke liye grid use karo kyuki agar container user kara koi div bana kar to wo space lega fir walas navbaar sabse main container ke andar hi rehne ki koshish karega */
+
+/* iss case me footer bhi responsive nahi tha  */
+nav{
+    min-height: 80px;
+    width: 100%;
+    position: sticky;
+    padding: 0 5px;
+    top: 0;
+    background-color: #000000;
+    background-image: linear-gradient(160deg, #000000 0%, #8085d0 100%);
+    display: flex;
+    justify-content: space-around;
+}    
+
+
+label.logo{
+    color: rgb(238, 163, 23);
+    text-shadow: 5px 5px 10px black;
+    font-size: 40px;
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;
+    display: flex;
+    line-height: 80px;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    font-size: 1.4rem;
+}
+
+.heroSection{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    /* border: 1px solid black; */
+}
+
+.bowlRight{
+    /* margin: auto ; */
+    /* to put the bowl right part at center vertically */
+    height: 500px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.discount{
+    background-color: rgb(13, 149, 13);
+    border-radius: 3px;
+    box-shadow: 2px 3px 5px rgb(4, 79, 4);
+    width: 16rem;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear 0s;
+}
+.discount:hover, .explore:hover{
+    transform: scale(1.2);
+}
+.discount p{
+    font-size: 20px;
+    color: rgb(235, 238, 238);
+}
+.message h1{
+    font-size: 70px;
+    font-weight: 400;
+}
+.message p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.explore{
+    /* border: 1px solid rgb(189, 140, 49); */
+    border-radius: 5px;
+    background-color: rgb(236, 157, 12);
+    box-shadow: 2px 3px 5px rgb(130, 85, 1);
+    width: 12rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear 0s;
+}
+.explore p{
+    font-size: 25px;
+    color: azure;
+}
+
+/* voucher */
+.features {
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .feature {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+  }
+  .feature img {
+    width: 72px;
+  }
+  .feature:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+  }
+  .divider {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+  }
+
+
+
+
+
+/* menu section */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 100px 0;
+    align-items: center;
+  }
+.menu h2{
+    padding: 10px;
+    background-color: rgb(3, 138, 3);
+    box-shadow: 3px 3px 5px ;
+    border-radius: 10px;
+}
+  
+  .grid-image {
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+  }
+  .grid-image:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+  }
+  .grid {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+      "I1 I1 I2 I3"
+      "I1 I1 I2 I7"
+      "I4 I5 I6 I7";
+  }
+  
+  .item1 {
+    grid-area: I1;
+  }
+  .item2 {
+    grid-area: I2;
+  }
+  .item3 {
+    grid-area: I3;
+  }
+  .item4 {
+    grid-area: I4;
+  }
+  .item5 {
+    grid-area: I5;
+  }
+  .item6 {
+    grid-area: I6;
+  }
+  .item7 {
+    grid-area: I7;
+  }
+  
+
+/* footer */
+footer{
+    background-color: #000000;
+    background-image: linear-gradient(160deg, #000000 0%, #8085d0 100%);
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    text-shadow: 1px 1px 8px rgb(0, 0, 0,10px);
+    align-items: center;
+}
+.links , #links{
+    list-style: none;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* #links{
+  color: azure;
+} */
+.support, #support{
+    list-style: none;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.logoCompany{
+    color: rgb(238, 163, 23);
+    font-size: 40px;
+    line-height: 80px;
+    text-shadow: 5px 5px 10px black;
+}
+.newsletter{
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.iconContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (max-width :786px) {
+    .heroSection{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .bowlLeft {
+        display: flex;
+        justify-content: center;
+      }
+      .bowlLeft img {
+        width: 80%;
+      }
+      .bowlRight {
+        /* gap: 10px; */
+        padding: 0 20px;
+        align-items: center;
+        margin-top: 0;
+      }
+      .bowlRight h1 {
+        font-size: 32px;
+      }
+      .features {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+      }
+      .feature {
+        flex-direction: column;
+        align-items: center;
+      }
+      .grid {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .grid-image {
+        border-radius: 0px;
+      }
+      footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        justify-content: center;
+      }
+      .links , #links{
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .support , #support{
+        flex-direction: column;
+        align-items: center;
+      }
+      .newsletter{
+        flex-direction: column;
+        align-items: center;
+      }
+      .iconContainer{
+        gap: 10px;
+      }
+      
+    }
+@media (max-width: 490px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
