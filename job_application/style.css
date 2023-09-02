@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    
+}
+.content{
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 3px 2px 7px rgba(18, 107, 18, 0.7);
+}
+.title{
+    font-size: 20px;
+}
+.fcontainer{
+    margin-top: 20px;
+    /* gap between job application and entire form*/
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+}
+.fcontent{
+    display: flex;
+    flex-direction: column;
+    /* most important code hai ye iss page ka */
+    /* first name and baki sabka kaise label upar hai and input box neeche hai uske liye use hota hai ye */
+}
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.textarea_container{
+    grid-column: 1/ span 2;
+} 
+.textarea_container textarea{
+    width: 100%;
+}
+
+input,select,textarea{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 15px;
+}
+input:focus{
+    outline-color:  red;
+    
+}
+.button_container{
+   display: flex; 
+   justify-content: flex-end;
+   margin-top: 20px; 
+}
+ button{
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 4px;
+    transition: 0.3s ease-in;
+} 
+button:hover{
+    background-color: grey;
+    border: 2px solid red;
+    color: black;
+    transition: 0.3s ease-out ;
+    cursor: pointer;
+}
+
+/*  we will have to use media queries to make the page responsive sometimes  */
+@media(max-width:460px){
+    .textarea_container{
+        grid-column: 1/ span 1;
+    } 
+};
+
+
+
+/* https://www.youtube.com/watch?v=R3GOIx3UqGE&list=PLPppPPmk0i3hZCNmbVtcP1hlwDKOdUFX9&index=11 */

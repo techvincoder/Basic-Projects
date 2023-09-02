@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+.section1{
+    height: 100vh;
+    background-color:aquamarine;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(image1.jpg);
+    min-height: 100%;
+    background-position: center;
+    /* to position the image at the center */
+    background-size: cover;
+    /* to fill the screen with image as background */
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* to fix the bacground like in parallax website */
+}
+.overlay{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* background-color: red; */
+    opacity: 1;
+}
+#hi{
+    font-size: 80px;
+    font-weight: 300;
+}
+.overlay span{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    text-shadow: 5px 5px 90px;
+}
+h2{
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+    text-shadow: 5px 5px 90px;
+}
+.section2{
+    height: 200px;
+    background-color: black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2 p{
+    color: white;
+    font-size: 50px;
+}
+.section2 span{
+    font-size: 80px;
+}
+
+.section3{
+    height: 800px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frame{ 
+    height: 700px;
+    width: 1400px;
+    /* background-color: aqua;
+    border:1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.frame1, .frame2, .frame3{
+    height: 580px;
+    width: 380px;
+    background-color: white;
+    /* border: 1px solid white; */
+    box-shadow: 1px 2px 5px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s linear 0s;
+}
+.frame1:hover, .frame2:hover , .frame3:hover{
+    transform: scale(1.2);
+}
+img{
+    height: 40%;
+    width: 400px;
+}
+.frame1 p , .frame2 p , .frame3 p {
+    text-align: center;
+    padding: 30px;
+}
+
+.section4{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.leftbox{
+    height: 100%;
+    width: 50%;
+    background: #515603;
+}
+.rightbox{
+    height: 100%;
+    width: 50%;
+    background: #722300;
+}
+.leftbox, .rightbox{
+    display: flex;
+    flex-direction: column; 
+}
+.section4 h2{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+
+}
+.section4 p{
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 40px;
+}
+
+
+footer{
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: white;
+    font-size: 25px;
+}

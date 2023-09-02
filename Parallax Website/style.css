@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    /* to hide the bottom scrollbar in x direction */
+    background-color: red;
+    position: absolute;
+}
+.first{
+    background-image: url(image1.jpg);
+    min-height: 100%;
+}
+.second{
+    background-image: url(image2.jpg);
+    min-height: 100%;
+}
+.third{
+    background-image: url(image3.jpg);
+    height: 100%;
+}
+.fourth{
+    background-image: url(image4.jpg);
+    height: 100%;
+}
+.fifth{
+    background-image: url(image5.jpg);
+    height: 100%;
+}
+.sixth{
+    background-image: url(image6.jpg);
+    height: 100%;
+}
+.seventh{
+    background-image: url(image7.jpg);
+    height: 100%;
+}
+/* .eighth{
+    background-image: url(image8.jpg);
+    height: 100%;
+} */
+/* .first, .second, .third, .fourth{
+    display: flex;
+    flex-direction: column;
+} */
+.first, .second, .third, .fourth, .fifth, .sixth, .seventh {
+    /* position: relative; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.overlay{
+    position: absolute;
+    /* iske parent ko agar relative kiya tabhi ye uska 100% height lega */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.overlay span{
+    color: white;
+    font-size: 30px;
+    background-color: rgba(238, 101, 226, 0.1);
+    padding: 10px;
+}
+/* currently the overlay code is not useful because we have not added anything to the center of the image */
+.para{
+    /* position: absolute; */
+    padding: 10px 100px;
+    height: 200px;
+    background-color: rgb(190, 26, 190);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    opacity: 1;
+}
+.para p{
+    color:rgb(255, 255, 255);
+}
+h1{
+    color: rgb(255, 255, 255);
+}
+#hp1{
+    background-color: rgb(55, 133, 249);
+}
+#hp2{
+    background-color: rgba(13, 157, 80, 0.986);
+}
+#hp3{
+    background-color: rgb(133, 111, 84);
+}
+#hp5{
+    background-color: rgb(22, 140, 126);
+}
+#hp6{
+    background-color: rgb(12, 81, 91);
+}
+#hp7{
+    background-color: rgb(49, 88, 130);
+}

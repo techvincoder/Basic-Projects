@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 70px;
+            width: 700px;
+            display: flex;
+            flex-direction: row;
+        }
+        .box{
+            background-color: antiquewhite;
+            border: 1px solid black;
+        }
+        .container1{
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+        }
+        .container2{
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+            background-color: beige;
+        }
+
+        @media (max-width:600px){
+            .container{
+                flex-direction:column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="box"><h1>This is heading 1</h1></div>
+            <div class="box"><h1>This is heading 2</h1></div>
+        </div>
+        <div class="container2">
+            <img src="image1.png" alt="image" height="200px" width="200px">
+        </div>
+    </div>
+</body>
+</html>
